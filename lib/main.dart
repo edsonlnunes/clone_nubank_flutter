@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Clone Nubank',
       theme: ThemeData(
         primaryColor: kPrimaryColor,
-        accentColor: kPrimaryColor,
+        appBarTheme: AppBarTheme(
+          backgroundColor: kPrimaryColor,
+        ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),

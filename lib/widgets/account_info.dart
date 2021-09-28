@@ -3,12 +3,12 @@ import 'package:nubank_clone/themes/colors.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class AccountInfo extends StatelessWidget {
-  final bool isExpanded;
+  final bool? isExpanded;
   AccountInfo({this.isExpanded});
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      height: isExpanded ? MediaQuery.of(context).size.height * .4 : 0,
+      height: isExpanded! ? MediaQuery.of(context).size.height * .4 : 0,
       width: double.maxFinite,
       duration: Duration(milliseconds: 400),
       child: SingleChildScrollView(
