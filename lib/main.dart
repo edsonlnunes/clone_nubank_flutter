@@ -16,6 +16,9 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           backgroundColor: kPrimaryColor,
         ),
+        colorScheme: Theme.of(context).colorScheme.copyWith(
+              secondary: kPrimaryColor,
+            ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
